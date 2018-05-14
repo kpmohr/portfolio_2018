@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+/*FONTS*/
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  body {
+    font-size: 1.3333333333vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 2.5vw;
+  }
+}
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+}
+#cssmenu {
+  background-color: #fff;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+#cssmenu h1 {
+  color: #444444;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 0.100em;
+  margin: 0.5em;
+  text-transform: uppercase;
+}
+#cssmenu h1 span {
+  color: #17c57d;
+}
+
+#cssmenu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+  padding: 0 2em 0 0;
+  margin: auto 0;
+  vertical-align: middle;
+}
+
+#cssmenu li {
+  color: #aaaaaa;
+  line-height: 1;
+  list-style: none;
+}
+
+#cssmenu a {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+#cssmenu a:hover {
+  color: #17c57d;
+}
+
+#footer {
+  background-color: #444444;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: right;
+  z-index: 10;
+}
+#footer h2 {
+  color: #fff;
+  font-family: 'Cookie', cursive;
+  font-size: 1em;
+  line-height: 1em;
+  margin: auto;
+  padding: 1em;
+}
+
+
+#main #main-top {
+  background: url(https://farm5.staticflickr.com/4567/38187475674_6ec21abaf4_h.jpg);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 37.500em;
+  max-height: 600px;
+  position: relative;
+}
+#main #main-top .info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+#main #main-top h3 {
+  color: #fff;
+  font-family: 'Cookie', cursive;
+  font-size: 7.5em;
+  letter-spacing: 0.050em;
+  line-height: 1.5em;
+  font-weight: 100;
+  margin: auto;
+}
+#main #main-top p {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  line-height: 1em;
+  font-weight: 300;
+  margin: 2em auto auto auto;
+}
+#main #main-top p span:hover{
+  text-decoration: underline;
+  text-decoration-color: #17c57d;
+}
+#main #main-top button {
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #17c57d;
+  box-shadow: 2px 2px rgba(170,170,170,0.5);
+  color: #17c57d;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: 500;
+  margin: 3em auto auto auto;
+  padding: 0.75em;
+}
+#main #main-top button:hover {
+  background: #17c57d;
+  color: #fff;
+  border: 1px solid #fff;
+}
