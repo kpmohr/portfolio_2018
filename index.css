@@ -30,7 +30,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  z-index: 10;
+  z-index: 15;
 }
 
 #cssmenu h1 {
@@ -89,23 +89,29 @@ body {
   font-family: 'Cookie', cursive;
   font-size: 1em;
   line-height: 1em;
+  letter-spacing: 0.050em;
   margin: auto;
   padding: 1em;
 }
 
-
+#main {
+  margin: 2.75em 0;
+}
 #main #main-top {
-  background: url(https://farm5.staticflickr.com/4567/38187475674_6ec21abaf4_h.jpg);
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 37.500em;
-  max-height: 600px;
   position: relative;
+  width: 100%;
+}
+#main #main-top .picture {
+  position: relative;
+  width: 100%;
+}
+#main #main-top .picture img {
+  position: relative;
+  width: 100%;
 }
 #main #main-top .info {
   position: absolute;
-  top: 50%;
+  top: 67.5%;
   left: 50%;
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
@@ -128,7 +134,7 @@ body {
   font-size: 1.5em;
   line-height: 1em;
   font-weight: 300;
-  margin: 2em auto auto auto;
+  margin: 0em auto auto auto;
 }
 #main #main-top p span:hover{
   text-decoration: underline;
@@ -144,11 +150,672 @@ body {
   font-size: 1em;
   line-height: 1em;
   font-weight: 500;
-  margin: 3em auto auto auto;
+  margin: 2em auto auto auto;
   padding: 0.75em;
 }
 #main #main-top button:hover {
   background: #17c57d;
   color: #fff;
   border: 1px solid #fff;
+}
+
+#main #main-second {
+  width: 100%;
+  background: #fff;
+  position: relative;
+  margin-top: -1%;
+}
+#main #main-second p {
+  color: #898989;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95em;
+  line-height: 1em;
+  font-weight: 300;
+  margin: 0;
+  padding: 1.25em;
+  display: inline-block;
+}
+#main #main-second form {
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  float: right;
+  display: inline-block;
+  padding: 1.25em;
+}
+#main #main-second form input {
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 1em;
+  padding: 0.25em;
+  background: #fff;
+}
+#main #main-second form input.email {
+  background: #f2f2f2;
+}
+#main #main-second form input.submit {
+  background: #505050;
+  color: #f2f2f2;
+}
+
+.fullwidth {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+#main #main-third .inner-section {
+  width: 75%;
+  position: relative;
+  margin: 2.5em auto;
+  text-align: center;
+}
+#main #main-third .inner-section h3 {
+  color: #6a6a6a;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  line-height: 1em;
+  font-weight: 500;
+  letter-spacing: 0.050em;
+  margin: auto auto 0.5em auto;
+  display: block;
+  text-transform: uppercase;
+}
+#main #main-third .inner-section p {
+  color: #a4a4a4;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95em;
+  line-height: 1.75em;
+  font-weight: 300;
+  margin: auto;
+  display: block;
+  text-transform: none;
+}
+#main #main-third .inner-section p span {
+  color: #17c57d;
+  font-weight: 500;
+}
+#main #main-fourth .inner-section {
+  width: 33.33333%;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+#main #main-fourth {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+#main #main-fourth .inner-section.one {
+  background: url(img/wd-section.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#main #main-fourth .inside{
+  padding: 15% 5%;
+}
+#main #main-fourth .inner-section.two {
+  background: #17c57d;
+}
+#main #main-fourth .inner-section.two .arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #f2f2f2;
+  top: 0px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: auto;
+  right: auto;
+}
+#main #main-fourth .inner-section.three {
+  background: url(img/m-section.jpg);
+  background-size: auto 100%;
+  background-position: right center;
+}
+#main #main-fourth .inner-section h3 {
+  color: #fff;
+  font-family: 'Cookie', cursive;
+  font-size: 6em;
+  line-height: 1em;
+  font-weight: 500;
+  margin: auto;
+  display: inline-block;
+  text-transform: uppercase;
+}
+#main #main-fourth .inner-section p {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95em;
+  line-height: 1;
+  font-weight: 300;
+  margin: auto;
+  display: inline-block;
+  text-transform: none;
+}
+#main #main-fourth .inner-section p span {
+  display: block;
+}
+#main #main-fourth .inner-section a {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75em;
+  line-height: 7.25;
+  font-weight: 300;
+  display: block;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  width: 7.5em;
+  height: 7.5em;
+  margin: auto;
+}
+#main #main-fifth {
+  width: 100%;
+  position: relative;
+  background-image: url(img/marble-75.png);
+  background-position: 100% auto;
+  background-position: center;
+  overflow: visible;
+  z-index: 10;
+}
+#main #main-fifth .polo-picture-one {
+  position: absolute;
+  top: 25%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: auto;
+  bottom: auto;
+  right: 5%;
+  width: 15%;
+  z-index: 0;
+  opacity: 0.75;
+}
+#main #main-fifth .polo-picture-one img {
+  width: 100%;
+  transform: rotate(25deg);
+  box-shadow: 1px 2px rgba(0,0,0,0.25);
+}
+#main #main-fifth .polo-picture-two {
+  position: absolute;
+  top: 78%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 7.5%;
+  bottom: auto;
+  right: auto;
+  width: 22.5%;
+  z-index: 0;
+  opacity: 0.75;
+}
+#main #main-fifth .polo-picture-two img {
+  width: 100%;
+  transform: rotate(-25deg);
+  box-shadow: 1px 2px rgba(0,0,0,0.25);
+}
+#main #main-fifth .key-one {
+  position: absolute;
+  top: 20%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 25%;
+  bottom: auto;
+  right: auto;
+  width: 5%;
+  opacity: 0.75;
+  z-index: 0;
+}
+#main #main-fifth .key-one img {
+  width: 100%;
+  transform: rotate(20deg);
+}
+#main #main-fifth .key-two {
+  position: absolute;
+  top: 32%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 45%;
+  bottom: auto;
+  right: auto;
+  width: 5%;
+  opacity: 0.75;
+  z-index: 0;
+}
+#main #main-fifth .key-two img {
+  width: 100%;
+  transform: rotate(-20deg);
+}
+#main #main-fifth .key-three {
+  position: absolute;
+  top: 40.5%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 5%;
+  bottom: auto;
+  right: auto;
+  width: 5.5%;
+  opacity: 0.85;
+  z-index: 0;
+}
+#main #main-fifth .key-three img {
+  width: 100%;
+  transform: rotate(-20deg);
+}
+#main #main-fifth .coffee-one {
+  position: absolute;
+  top: 15.5%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 7.5%;
+  bottom: auto;
+  right: auto;
+  width: 11%;
+  z-index: 0;
+  opacity: 0.75;
+}
+#main #main-fifth .coffee-one img {
+  width: 100%;
+}
+#main #main-fifth .key-2one {
+  position: absolute;
+  top: 70%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 75%;
+  bottom: auto;
+  right: auto;
+  width: 5%;
+  opacity: 0.85;
+  z-index: 0;
+}
+#main #main-fifth .key-2one img {
+  width: 100%;
+  transform: rotate(-20deg);
+}
+#main #main-fifth .key-2two {
+  position: absolute;
+  top: 80.5%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 82.5%;
+  bottom: auto;
+  right: auto;
+  width: 5%;
+  opacity: 0.75;
+  z-index: 0;
+}
+#main #main-fifth .key-2two img {
+  width: 100%;
+  transform: rotate(20deg);
+}
+#main #main-fifth .key-2three {
+  position: absolute;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 92%;
+  bottom: auto;
+  right: auto;
+  width: 5.5%;
+  opacity: 0.85;
+  z-index: 0;
+}
+#main #main-fifth .key-2three img {
+  width: 100%;
+  transform: rotate(-20deg);
+}
+#main #main-fifth .laptop-one {
+  position: absolute;
+  top: 90%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 60%;
+  bottom: auto;
+  right: auto;
+  width: 12.5%;
+  opacity: 0.85;
+  z-index: 0;
+  opacity: 0.75;
+}
+#main #main-fifth .laptop-one img {
+  width: 100%;
+  transform: rotate(-10deg);
+}
+#main #main-fifth .text-section {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding: 5% 0 15% 0;
+}
+#main #main-fifth .text-section h3 {
+  color: #505050;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.050em;
+  display: block;
+  text-transform: uppercase;
+}
+#main #main-fifth .text-section .quote h2 {
+  color: #505050;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0;
+  display: block;
+  margin: 0 auto;
+}
+#main #main-fifth .text-section .quote p {
+  color: #505050;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: 0;
+  opacity: 0.5;
+  display: block;
+  margin: 0.5em auto 0 auto;
+}
+#main #main-fifth .text-section p {
+  color: #505050;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 300;
+  letter-spacing: 0;
+  display: block;
+  margin: 2.5em auto 0 auto;
+  width: 57.5%;
+}
+
+#main #main-fifth button {
+  background: #17c57d;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  box-shadow: 2px 2px rgba(170,170,170,0.5);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: 500;
+  margin: 5em auto auto auto;
+  padding: 0.75em;
+}
+#main #main-fifth button:hover {
+  background: #fff;
+  color: #17c57d;
+  border: 1px solid #17c57d;
+}
+#main #main-sixth {
+  z-index: 1;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+}
+#main #main-sixth .social-grid {
+  width: 33.11111%;
+  position: relative;
+  border: 1px solid #fff;
+}
+#main #main-sixth .social-one {
+  background: #444444;
+}
+#main #main-sixth .social-one .logo-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+#main #main-sixth .social-one .logo-group .logo-img {
+  width: 48%;
+  padding: 0 1%;
+}
+#main #main-sixth .social-one .logo-group .logo-img img {
+  width: 100%;
+}
+#main #main-sixth .social-two {
+  background: #f2f2f2;
+  position: relative;
+}
+#main #main-sixth .social-two .text {
+  text-align: center;
+  color: #17c57d;
+  font-family: 'Cookie', cursive;
+  font-size: 4.5em;
+  letter-spacing: 0;
+  line-height: 1em;
+  font-weight: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+#main #main-sixth .social-two .text span::after {
+  display: block;
+  content: '';
+  width: 1.2em;
+  height: 1px;
+  background-color: #17c57d;
+  margin: -0.15em 0.4em auto auto;
+}
+#main #main-sixth .social-three {
+  background: url(img/main-bg.jpg);
+  background-size: auto 125%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+#main #main-sixth .social-three .insta-logo {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  opacity: 0.5;
+}
+#main #main-sixth .social-three .insta-logo img {
+  width: 100%;
+}
+#main #main-sixth .social-four {
+  background: url(img/rwb-post.jpg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+#main #main-sixth .social-four .tumblr-logo {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 47.5%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  opacity: 0.5;
+}
+#main #main-sixth .social-four .tumblr-logo img {
+  width: 100%;
+}
+#main #main-sixth .social-five {
+  background: url(img/instagram-quote1.jpg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+#main #main-sixth .social-six {
+  background: url(img/50th.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+#main #main-sixth .social-six .pinterest-logo {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  opacity: 0.5;
+}
+#main #main-sixth .social-six .pinterest-logo img {
+  width: 100%;
+}
+
+#main #main-seventh {
+  margin: 2em auto 4.5em auto;
+}
+#main #main-seventh h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 0.300em;
+  font-weight: 500;
+  margin: 0.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+#main #main-seventh p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.150em;
+  font-weight: 100;
+  margin: 0.5em auto 2em auto;
+  text-align: center;
+}
+#main #main-seventh .carousel-cell {
+  width: 25%;
+  padding: 0 0.5em;
+}
+#main #main-seventh .carousel-cell img {
+  width: 100%;
+}
+#main #main-seventh .carousel-cell .connect-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+#main #main-seventh .carousel-cell .connect-div img {
+  width: 100%;
+  opacity: 0.75;
+}
+#main #main-seventh .carousel-cell .connect-div-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index: 5;
+}
+#main #main-seventh .carousel-cell .connect-div-text p {
+  transform: rotate(-20deg);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  letter-spacing: 0.250em;
+  font-weight: 700;
+  margin: 0.5em;
+  text-transform: uppercase;
+  color: #17c57d;
+  text-shadow: 1px 1px #fff;
+}
+#main #main-seventh .flickity-button {
+    background: rgba(68,68,68,0.75);
+}
+#main #main-seventh .flickity-button-icon {
+    fill: #fff;
+}
+
+#main #main-eighth {
+  margin: auto;
+  position: relative;
+}
+#main #main-eighth .info {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 75%;
+  text-align: center;
+  color: #fff;
+}
+#main #main-eighth .info h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  letter-spacing: 0.250em;
+  font-weight: 500;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+#main #main-eighth .info h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+  letter-spacing: 0;
+  font-weight: 100;
+  margin: 1em auto 0.5em auto;
+}
+
+#main #main-eighth .info p {
+  font-family: 'Cookie', cursive;
+  font-size: 1.25em;
+  letter-spacing: 0.050em;
+  font-weight: 100;
+  margin: auto;
+}
+
+
+#main #main-ninth {
+  margin: auto;
+  position: relative;
+  margin: 2em auto 5em auto;
+}
+#main #main-ninth .carousel-cell {
+  width: 25%;
+  padding: 0 0.5em;
+}
+#main #main-ninth .carousel-cell .bg-opacity {
+  opacity: 0;
+  position: relative;
+  width: 100%;
+}
+#main #main-ninth .carousel-cell .connect-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 90%;
+}
+#main #main-ninth .carousel-cell .connect-div img {
+  width: 100%;
+}
+#main #main-ninth .carousel-cell .connect-div-text {
+  text-align: center;
+  position: relative;
+}
+#main #main-ninth p {
+  color: #444444;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-size: 1.125em;
+  letter-spacing: 0;
+  font-weight: 100;
+  margin: 1em auto 0.5em auto;
+  text-decoration: none;
+}
+#main #main-ninth a {
+  text-decoration: none;
 }
